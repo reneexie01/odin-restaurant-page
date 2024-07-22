@@ -1,4 +1,4 @@
-export { beverages, mains };
+export { beverages, mains, sides };
 
 function beverages() {
     const element = document.createElement('div');
@@ -84,6 +84,51 @@ function mains() {
 
     element.appendChild(fish);
     element.appendChild(fishDescription);
+
+
+    return element;
+}
+
+function sides() {
+    const element = document.createElement('div');
+    element.classList.add('sides');
+    
+    const title = document.createElement('h2');
+    title.innerHTML = 'Sides';
+
+    const salad = document.createElement('h3');
+    salad.innerHTML = 'Salad - $12';
+    const saladDescription = document.createElement('p');
+    saladDescription.innerHTML = 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.'
+
+    const wedges = document.createElement('h3');
+    wedges.innerHTML = 'Wedges - $16';
+    const wedgesDescription = document.createElement('p');
+    wedgesDescription.innerHTML = 'Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?'
+
+    const steamedVeg = document.createElement('h3');
+    steamedVeg.innerHTML = 'Steamed Vegetables - $17';
+    const steamedVegDescription = document.createElement('p');
+    steamedVegDescription.innerHTML = 'Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.'
+
+    const friedCalamari = document.createElement('h3');
+    friedCalamari.innerHTML = 'Fried Calamari - $21';
+    const friedCalamariDescription = document.createElement('p');
+    friedCalamariDescription.innerHTML = 'Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.'
+
+    element.appendChild(title);
+
+    element.appendChild(salad);
+    element.appendChild(saladDescription);
+
+    element.appendChild(wedges);
+    element.appendChild(wedgesDescription);
+
+    element.appendChild(steamedVeg);
+    element.appendChild(steamedVegDescription);
+
+    element.appendChild(friedCalamari);
+    element.appendChild(friedCalamariDescription);
 
 
     return element;
