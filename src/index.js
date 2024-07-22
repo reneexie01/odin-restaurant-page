@@ -1,5 +1,5 @@
 import './style.css';
-import { logo, description, contact } from './page-contents.js';
+import { logo, description, hours } from './page-contents.js';
 
 console.log("hello world!");
 
@@ -9,4 +9,4 @@ div.appendChild(logo());
 
 div.appendChild(description());
 
-div.appendChild(contact());
+div.appendChild(hours());

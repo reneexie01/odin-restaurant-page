@@ -1,4 +1,4 @@
-export { logo, description, contact };
+export { logo, description, hours };
 import Logo from './Generic-Restaurant-Logo.jpg';
 
 function logo() {
@@ -30,28 +30,44 @@ function description() {
     return element;
 }
 
-function contact() {
+function hours() {
     const element = document.createElement('div');
-    element.classList.add('contact');
+    element.classList.add('hours');
     
     const title = document.createElement('h2');
-    title.innerHTML = 'Contact Us';
+    title.innerHTML = 'Hours';
 
     const ul = document.createElement('ul');
 
-    const email = document.createElement('li');
-    email.innerHTML = 'test@example.com';
+    const monday = document.createElement('li');
+    monday.innerHTML = 'Monday: Closed';
 
-    const number = document.createElement('li');
-    number.innerHTML = '+614 00 000 000';
+    const tuesday = document.createElement('li');
+    tuesday.innerHTML = 'Tuesday: Closed';
 
-    const address = document.createElement('li');
-    address.innerHTML = '1/201 Wallaby Way, Sydney NSW';
+    const wednesday = document.createElement('li');
+    wednesday.innerHTML = 'Wednesday: 11:00am - 11:00pm';
+
+    const thursday = document.createElement('li');
+    thursday.innerHTML = 'Thursday: 11:00am - 11:00pm';
+
+    const friday = document.createElement('li');
+    friday.innerHTML = 'Friday: 11:00am - 1:00am';
+
+    const saturday = document.createElement('li');
+    saturday.innerHTML = 'Thursday: 11:00am - 1:00am';
+
+    const sunday = document.createElement('li');
+    sunday.innerHTML = 'Thursday: 11:00am - 11:00pm';
 
     element.appendChild(title);
-    ul.appendChild(email);
-    ul.appendChild(number);
-    ul.appendChild(address);
+    ul.appendChild(monday);
+    ul.appendChild(tuesday);
+    ul.appendChild(wednesday);
+    ul.appendChild(thursday);
+    ul.appendChild(friday);
+    ul.appendChild(saturday);
+    ul.appendChild(sunday);
     element.appendChild(ul);
 
     return element;
