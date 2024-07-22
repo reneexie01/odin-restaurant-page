@@ -1,13 +1,15 @@
 export { logo, description, contact };
+import Logo from './Generic-Restaurant-Logo.jpg';
 
 function logo() {
     const element = document.createElement('div');
-    element.classList.add('restaurant-name');
+    element.classList.add('restaurant-logo');
 
-    const title = document.createElement('h1');
-    title.innerHTML = 'Restaurant Name';
+    const restaurantLogo = new Image();
+    restaurantLogo.classList.add('logo');
+    restaurantLogo.src = Logo;
 
-    element.appendChild(title);
+    element.appendChild(restaurantLogo);
 
     return element;
 }

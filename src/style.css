@@ -1,5 +1,4 @@
 body {
-    padding: 10px;
     max-width: 800px;
     box-sizing: border-box;
     margin: auto;
@@ -8,6 +7,7 @@ body {
 header {
     display: flex;
     justify-content: center;
+    padding: 30px;
 }
 
 button {
@@ -15,11 +15,20 @@ button {
     height: 30px;
 }
 
-h1, h2 {
+h2 {
     text-align: center;
 }
 
 ul {
     list-style-type: none;
-    text-align: center;
+}
+
+.restaurant-logo {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.logo {
+    max-width: 400px;
 }
