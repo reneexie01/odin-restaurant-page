@@ -50,3 +50,13 @@ ul {
 .beverages > p, .mains > p, .sides > p {
     padding-bottom: 50px;
 }
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.email, .number, .address {
+    font-weight: bold;
+}
