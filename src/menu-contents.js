@@ -5,7 +5,7 @@ function beverages() {
     element.classList.add('beverages');
 
     const title = document.createElement('h2');
-    title.innerHTML = 'Beverages';
+    title.innerHTML = 'Alcoholic and Non-Alcoholic Beverages';
 
     const beer = document.createElement('h3');
     beer.innerHTML = 'Beer - $12.50';
